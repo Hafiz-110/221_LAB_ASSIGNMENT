@@ -1,0 +1,16 @@
+def ancient_sort(length):
+    arr = input().split(' ')
+    for i in range(length):
+        swapped = False
+        for j in range(length-1):
+            a, b = int(arr[j]), int(arr[j+1])
+            r_a, r_b = a%2, b%2
+            if (a > b) and ((r_a==0 and r_b==0) or (r_a==1 and r_b==1)):
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+                swapped = True
+        if swapped==False:
+            break
+    print(*arr) # used *arr to convert the string valued array to int valued array
+
+ancient_sort(int(input()))
+
