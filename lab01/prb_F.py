@@ -10,7 +10,8 @@ def ancient_sort(length):
                 swapped = True
         if swapped==False:
             break
-    print(*arr) # used *arr to convert the string valued array to int valued array
+    print(*arr)# here * is unpacking the array and it passes the element to pirnt() as separate arguments
+                # like print('1', '2', '3')
 
 ancient_sort(int(input()))
 
