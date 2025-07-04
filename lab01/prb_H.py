@@ -20,7 +20,7 @@ train_list = []
 time_list = []
 des = []
 for i in range(schedules):
-    stat = input().split()
+    stat = input().split()    # must give .split() not .split(' ')
     train_list.append(stat[0])
     time_list.append(stat[len(stat)-1])
     des.append(stat[len(stat)-3])
