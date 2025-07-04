@@ -1,19 +1,21 @@
-def rev_sort(length):
-    arr = input().split()
-    for k in range(length):
+import sys
+input = sys.stdin.readline
+
+def rev_sort(ln):
+    a = input().split(' ')
+    for i in range(ln):
         swapped = False
-        for i in range(length-2):
-            if int(arr[i]) > int(arr[i+2]):
-                arr[i], arr[i+2] = arr[i+2], arr[i]
+        for j in range(ln-2):
+            if int(a[j]) > int(a[j+2]):
+                a[j], a[j+2] = a[j+2], a[j]
                 swapped = True
         if swapped == False: break
-
+    
     flag = True
-    for j in range(length-1):
-        if int(arr[j]) > int(arr[j+1]):
+    for i in range(ln-1):
+        if int(a[i])>int(a[i+1]):
             flag = False; break
     if flag: print('YES')
     else: print('NO')
 
-length = int(input())
-rev_sort(length)
+rev_sort(int(input()))
