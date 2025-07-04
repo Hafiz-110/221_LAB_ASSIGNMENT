@@ -13,5 +13,10 @@ def ancient_sort(length):
     print(*arr)# here * is unpacking the array and it passes the element to pirnt() as separate arguments
                 # like print('1', '2', '3')
 
+                # it is the short form of this:
+                # let a = [1,2,3,4]
+                # for i in a:
+                #    print(i, end=' ')
+
 ancient_sort(int(input()))
 
