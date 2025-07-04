@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 def solve_arithmetic(tests):
     for i in range(tests):
         exp = input().split(' ')
