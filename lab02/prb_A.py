@@ -11,8 +11,7 @@ def two_sum_trouble(f_line, arr):
         else:
             if int(arr[i])+int(arr[j]) > target:
                 j -= 1
-            else:
-                i += 1
+            else: i += 1
     return '-1'
 
 
