@@ -8,10 +8,9 @@ def two_sum_trouble(f_line, arr):
     while i<j:
         if int(arr[i])+int(arr[j]) == target:
             return f'{i+1} {j+1}'
-        else:
-            if int(arr[i])+int(arr[j]) > target:
-                j -= 1
-            else: i += 1
+        
+        elif int(arr[i])+int(arr[j]) > target: j -= 1
+        else: i += 1
     return '-1'
 
 
