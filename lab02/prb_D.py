@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 
 def beautiful_sort_list(ln1, arr1, ln2, arr2):
-    ln3 = ln1+ln2; arr3 = []
+    arr3 = []
     i, j = 0, 0
     while i<ln1 and j<ln2:
         if arr1[i] <= arr2[j]:
