@@ -6,7 +6,7 @@ def longest_subarray_sum(n, k, arr):
     summ, ln = 0, 0
     while r<n:
         summ += arr[r];
-        while summ>k:
+        if summ>k:
             summ -= arr[l]; l += 1
         ln = max(ln, r-l+1)
 
