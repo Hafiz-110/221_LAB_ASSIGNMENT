@@ -12,7 +12,7 @@ def longest_k_distinct_subarray(n, k, arr):
         if len(dic)>k:
             dic[arr[l]] -= 1
             if dic[arr[l]] == 0:
-                del dic[arr[l]]
+                del dic[arr[l]]     # remove key when count is 0
             l += 1
         ln = max(ln, r-l+1)
 
