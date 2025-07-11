@@ -11,7 +11,7 @@ def sum_revisit(arr1, arr2, target, len1, len2):
             if diff == 0: return f'{i+1} {j+1}'
             else:               
                 if mini>diff:
-                    mini = diff; pair = (i+1, j+1); 
+                    mini = diff; pair = (i+1, j+1)
                 
                 if arr1[i]+arr2[j]>target: j -= 1
                 elif arr1[i]+arr2[j]<target: i += 1
