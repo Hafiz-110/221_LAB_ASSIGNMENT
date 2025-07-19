@@ -3,7 +3,7 @@ input = sys.stdin.readline
 
 def fast_power(a, b):
     res = 1
-    a = a % 107
+    a = a % 107    # modification for mod
     while b > 0:
         if b%2 == 1:
             res = (res*a) % 107
