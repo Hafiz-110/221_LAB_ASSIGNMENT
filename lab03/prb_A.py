@@ -13,11 +13,10 @@ def merge(left, right):
             count += len(left)-i    # modification
             n_arr.append(right[j]); j += 1
 
-    while i<len(left):
-        n_arr.append(left[i]); i += 1
+    # reduced the while loop
+    if i<len(left): n_arr += left[i:]
+    elif j<len(right): n_arr += right[j:]    
 
-    while j<len(right):
-        n_arr.append(right[j]); j += 1    
     return n_arr
 
 def merge_sort(ln, arr):
