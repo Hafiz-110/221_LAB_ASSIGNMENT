@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 
 def adjacency_matrix(n, m):
-    arr = [[0]*n for i in range(n)]
+    arr = [[0]*n for i in range(n)]    # this is the right way without numpy library
     for k in range(m):
         i, j, v = list(map(int, input().split()))
         arr[i-1][j-1] = v
