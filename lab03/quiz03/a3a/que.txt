@@ -1,0 +1,56 @@
+Task:
+Given a list of N distinct integers A[i], count the number of inversions in the
+list and sort the list in ascending order. An inversion is a pair (x, y) where
+x < y and A[x] > A[y].
+
+Input:
+First line contains the number of tests. The description of each test follows.
+Each test is described by two lines. First line contains N. Second line
+contains the integers A[i].
+
+Output:
+For each test in the given order, print the number of inversions in the first
+line and print the sorted list in the second line.
+
+Example-1 (batch-1):
+Input (stdin):
+2
+5
+1 2 5 4 3
+5
+1 2 3 4 5
+Output (stdout):
+3
+1 2 3 4 5
+0
+1 2 3 4 5
+
+Example-2 (batch-2):
+Input (stdin):
+2
+5
+5 4 3 2 1
+7
+6 4 2 5 7 3 1
+Output (stdout):
+10
+1 2 3 4 5
+14
+1 2 3 4 5 6 7
+
+Scoring:
+Batch   Score   Tests   Constraints
+1       0.1     2       1<=A[i]<=N<=10
+2       0.1     2       1<=A[i]<=N<=10
+3       0.2     10000   1<=A[i]<=N<=20
+4       0.3     20      1<=A[i]<=N<=10000
+5       0.3     2       1<=A[i]<=N<=100000
+------------------------
+5       1       Total
+
+Time limit: 1s (cpp) or 1.5s (java) or 3s (py) per batch.
+
+Hints:
+- Use fast input/output methods.
+- 0.2 score for passing only sample batches.
+- O(N*log(N)) solution is expected.
