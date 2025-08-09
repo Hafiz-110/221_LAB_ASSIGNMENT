@@ -13,7 +13,7 @@ def merge(left, right):
             
             n_arr.append(right[j]); j += 1
             
-            count += len(left)-i
+            count += len(left)-i    # crucial part. main change
         
     
     if i<len(left): n_arr += left[i:]
