@@ -1,16 +1,14 @@
 import sys
 input = sys.stdin.readline
 
-def metamorphosis(v):
-    arr = [[0]*v for i in range(v)]
-    for i in range(v):
-        lst = list(map(int, input().split()))
-        k = lst[0]
-        if len(lst)!=1:
-            for j in range(1, k+1):
-                arr[i][lst[j]] = 1
-
-    for i in arr:
-        print(*i)
+def metamorphosis(n):
+    a = [[0]*n for _ in range(n)]
+    for i in range(n):
+        inp = list(map(int, input().split()))
+        if len(inp)!=1:
+            for k in inp[1:]:
+                a[i][k] = 1
+    
+    for i in a: print(*i)
 
 metamorphosis(int(input()))
