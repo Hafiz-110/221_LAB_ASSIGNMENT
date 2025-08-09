@@ -1,0 +1,73 @@
+Task:
+Given the adjacency list representation of a simple directed unweighted graph
+with N nodes, prepare the adjacency matrix representation of that graph.
+The nodes are numbered from 0 to (N-1).
+
+Input:
+First line contains the number of tests. The description of each test follows.
+Each test is described by (N+1) lines. First line contains N. The i'th line
+contains the adjacency list of node numbered (i-2). The first integer in each
+of these lines, K, is the number of adjacent nodes of node numbered (i-2). Then
+K more distinct integer follow in the same line, representing the adjacent
+nodes of node numbered (i-2).
+
+Output:
+For each test in the given order, print N lines each containing N integers,
+representing the adjacency matrix which you are asked to prepare in this task.
+
+Example-1 (batch-1):
+Input (stdin):
+2
+1
+0
+5
+2 1 2
+1 0
+1 0
+1 4
+1 3
+Output (stdout):
+0
+0 1 1 0 0
+1 0 0 0 0
+1 0 0 0 0
+0 0 0 0 1
+0 0 0 1 0
+
+Example-2 (batch-2):
+Input (stdin):
+2
+2
+1 1
+0
+5
+0
+2 2 3
+3 1 3 4
+2 1 2
+1 2
+Output (stdout):
+0 1
+0 0
+0 0 0 0 0
+0 0 1 1 0
+0 1 0 1 1
+0 1 1 0 0
+0 0 1 0 0
+
+Scoring:
+Batch   Score   Tests   Constraints
+1       0.1     2       0<=K<N<=5
+2       0.1     2       0<=K<N<=5
+3       0.2     10000   0<=K<N<=10
+4       0.3     400     0<=K<N<=50
+5       0.3     100     0<=K<N<=100
+------------------------
+5       1       Total
+
+Time limit: 1s (cpp) or 1.5s (java) or 3s (py) per batch.
+
+Hints:
+- Use fast input/output methods.
+- 0.2 score for passing only sample batches.
+- O(N^2) solution is expected.
